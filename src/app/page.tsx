@@ -66,7 +66,7 @@ export default function Home() {
 
           {/* Social Links */}
           <div className="flex items-center justify-center gap-4">
-            <a href="#" className="p-3 bg-gray-800 hover:bg-gray-700 rounded-lg transition-all border border-gray-700">
+            <a href="https://x.com/omensolfun" target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-800 hover:bg-gray-700 rounded-lg transition-all border border-gray-700">
               <Twitter className="w-5 h-5 text-gray-400" />
             </a>
             <a href="#" className="p-3 bg-gray-800 hover:bg-gray-700 rounded-lg transition-all border border-gray-700">
