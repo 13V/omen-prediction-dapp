@@ -55,10 +55,22 @@ export default function Home() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <button className="group px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg font-bold text-white hover:scale-105 transition-all flex items-center justify-center gap-2">
-              Buy $OMEN
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
+            {process.env.NEXT_PUBLIC_PUMP_FUN_URL ? (
+              <a
+                href={process.env.NEXT_PUBLIC_PUMP_FUN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg font-bold text-white hover:scale-105 transition-all flex items-center justify-center gap-2"
+              >
+                Buy $OMEN
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </a>
+            ) : (
+              <button className="group px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg font-bold text-white hover:scale-105 transition-all flex items-center justify-center gap-2">
+                Buy $OMEN
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </button>
+            )}
             <button className="px-8 py-4 bg-gray-800 hover:bg-gray-700 rounded-lg font-bold text-white transition-all border border-gray-700">
               Read Whitepaper
             </button>
